@@ -12,8 +12,8 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Tahoma, Geneva, Verdana, sans-serif;
+            background-color: red;
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -94,9 +94,8 @@
             cursor: pointer;
             font-weight: normal;
         }
-
         .checkbox-group {
-            display: flex;
+            display: inline-flex;
             align-items: center;
             gap: 10px;
             margin-top: 8px;
@@ -137,10 +136,7 @@
             color: #e74c3c;
         }
 
-        @media (max-width: 600px) {
-            .form-container {
-                padding: 30px 20px;
-            }
+      
 
             h1 {
                 font-size: 1.5rem;
@@ -151,7 +147,7 @@
 <body>
     <div class="form-container">
         <h1>Create Account</h1>
-        <form id="signupForm">
+        <form id="signupForm" action="#" method="post">
             <!-- Name -->
             <div class="form-group">
                 <label for="name">Name <span class="required">*</span></label>
